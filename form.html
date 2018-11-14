@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="public/main.css" method="POST"/>
+   
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <h1><a href="form.html">ReyWeb</a></h1>
+                  <hr>
+        <nav class="navigate"><ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul></nav>
+                <hr>
+            </div>
+    </header>
+
+    <div class="container">
+    <h2>Candidate's Details</h2>
+            <form class="details" action="/candidate_details" method="POST" onsubmit="return validationForm()">
+
+                <label><b>Name</b></label></br>
+                <input type="text" placeholder="Enter Candidate's Name" name="name" required id = "name"></br>
+        
+                <label><b>Age</b></label></br>
+                <input type="number" placeholder="Enter Candidate's Age " name="age" required id = "age"></br>
+        
+                <label><b>Phone</b></label></br>
+                <input type="tel" placeholder="Enter Candidate's Phone number " name="phone" required id = "phone"></br>
+        
+                <label><b>Email</b></label></br>
+                <input type="email" placeholder="Enter Candidate's Email " name="email" required id = "email"></br>
+                
+                <label><b>Image</b></label></br>
+                <input type="file" name="pic" required id="pic"></br>
+              <ul>  
+                <li><video autoplay width="200" height="200"></video></li>
+                <li><canvas  id='canvas'  name="canvas" width="200" height="200" required></canvas></li>
+            </ul>
+                <input type='button'  id='snapshot' value="snapshot" required>
+                <input type="submit" class ="next-btn" action="/candidate_details" >  
+            </form>
+        
+    </div>
+    <!-- <aside class="tops">
+            <h2>Heading sidebar 1 </h2>
+            <p>A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea</p>
+            </aside>
+            
+            <aside class="mid">
+            <h2>Heading sidebar 2 </h2>
+            <p>A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea</p>
+            </aside>
+            <br/>
+            <aside class="bottoms">
+            <h2>Heading sidebar 3 </h2>
+            <p>A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea</p>
+            </aside> -->
+
+        <script src="public/form.js"></script>
+        <script src="public/capture.js"></script> 
+        <script language='javascript'> 
+        document.getElementById('snapshot').onclick = function() { 
+            var video = document.querySelector('video'); 
+            var canvas = document.getElementById('canvas'); 
+            var ctx = canvas.getContext('2d'); 
+            ctx.drawImage(video,0,0); 
+            //draw video source resized to 100x100 
+            ctx.drawImage(video,0,0,200,200);
+        } 
+        </script>
+</body>
+</html>

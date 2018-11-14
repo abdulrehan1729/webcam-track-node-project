@@ -1,0 +1,213 @@
+body{
+	margin:0;
+	padding:0;
+	background: rgb(255, 255, 255);
+	font-family: sans-serif;
+}
+ header {
+	background-color: rgb(49, 78, 116);
+	height: fit-content;
+	width: auto;
+	color: #f1f1f1;
+	font-family: sans-serif;
+	padding:2px 5% 0 5%;
+	border: #ccc;
+}
+.logo a{
+	text-decoration: none;	
+}
+.navigate {
+	font-size: 20px solid;
+	display: inline;
+	text-align: right;
+	color: #f1f1f1;
+
+}
+.navigate ul li {
+	padding:10px;
+}
+.navigate ul li a{
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	border-radius: 25px;
+	font-size:15px solid;
+}
+.navigate a:hover{
+	background: white;
+	color:black;
+}
+
+.container{
+	margin: 20px 20px 20px 20px; 
+	height: fit-content;
+	width: fit-content;
+	position: absolute;  
+	background: transparent;
+	padding: 15px 15px 15px 15px ;
+	border: 1px solid rgb(49, 78, 116);
+	border-radius: 25px;
+	box-shadow: 0 0 8px 3px rgb(49, 78, 116);
+}
+
+.container h2 {
+	background: rgb(49, 78, 116);
+	width:100%;
+	height:fit-content;
+	text-align: center;
+	color: #f6f6f6;
+
+}
+.quizContainer{
+	margin: 50px 20px 20px 20px; 
+	height: auto;
+	width: 50%;
+	position: absolute;  
+	top:50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-20%);
+	background: transparent;
+	padding: 15px 15px 15px 15px ;
+	border: 1px solid rgb(49, 78, 116);
+	border-radius: 25px;
+	box-shadow: 0 0 8px 3px rgb(49, 78, 116);
+}
+.title{
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: rgb(224, 227, 231);
+	background: rgb(49, 78, 116);
+	width:100%;
+	height: fit-content;
+	margin-bottom: 5%;
+}
+
+.question{
+	padding: 20px;
+	font-size: 22px;
+	background: rgba(235, 235, 235, 0.986);
+	/* background: rgb(93, 211, 138); */
+	border-radius: 20px;
+	margin: 10px 0 10px 0;
+	color: #000000;
+	border: 1px solid black;
+	
+	
+}
+
+.option{
+	width: 200px;
+	display: inline-block;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	background: rgba(235, 235, 235, 0.986);	
+	/* background: rgb(93, 211, 138); */
+	margin: 10px 0 10px 10px;
+	color: #000000;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+.option:hover{
+	background: rgb(30, 88, 155);
+	color: #f6f6f6;
+}
+
+.next-btn{
+	outline: none;
+	background: rgba(255, 255, 255, 0.5);
+	width: 100px;
+	height: 35px;
+	border-radius: 20px;
+	border: 1px solid black;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+}
+
+.next-btn:hover{
+	background: rgb(30, 88, 155);
+	color: #f6f6f6;
+}
+.retry-btn{
+	outline: none;
+	background: rgba(255, 255, 255, 0.5);
+	width: 100px;
+	height: 35px;
+	border-radius: 20px;
+	border: 1px solid black;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+}
+.retry-btn:hover{
+	background: rgb(30, 88, 155);
+	color: #f6f6f6;
+}
+
+.result{
+	height: auto;
+	text-align: center;
+	font-size: auto;
+}
+
+.option input:checked .option{
+	background: #08038C;
+	color: #000;
+}
+
+/*form details*/
+.detials {
+    
+    border: 3px solid #f1f1f1;
+    /*margin: auto;*/
+    width: 100%;
+    padding: 10px 10px auto ;
+	background-color: rgb(236, 178, 236);
+    border-radius: 5px;
+}
+.details label{
+    margin: 8px 20px;
+}
+.details input[type=text], input[type=password], input[type=date], input[type=number], input[type=email], input[type=tel] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+ul li{
+	display: inline;
+}
+
+canvas {
+	background-color: darkgray;
+	margin-left: 5%
+}
+/* .tops {
+	margin: 30px 0 5px 10px;
+	padding:10px 10px 10px 10px;
+	width:25%;
+	float:right;
+	border-radius: 5px;
+	background-color: rgb(400 280 180);
+}
+.mid {
+	margin: 5px 0 5px 10px;
+	padding:10px 10px 10px 10px;
+	width:25%;
+	float:right;
+	border-radius: 5px;
+	background-color: rgb(400 280 180);
+}
+.bottoms {
+	margin: 5px 0 5px 10px;
+	padding:0 10px 0 10px;
+	width:25%;
+	float:right;
+	border-radius: 5px;
+	background-color: rgb(400 280 180);
+} */
